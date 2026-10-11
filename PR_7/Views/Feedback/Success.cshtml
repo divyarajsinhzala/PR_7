@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "Success";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h3 style="color: green;">Submission Successful!</h3>
+
+<!-- This is where the Partial View is rendered -->
+@Html.Partial("_SuccessMessage")
+
+<br />
+
+<!-- Option to add other feedback -->
+@Html.ActionLink("Add Another Feedback", "Create", "Feedback")
